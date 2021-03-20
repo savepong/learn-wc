@@ -19,7 +19,9 @@ describe('LearnWc', () => {
   });
 
   it('can override the title via attribute', async () => {
-    const el = await fixture<LearnWc>(html`<learn-wc title="attribute title"></learn-wc>`);
+    const el = await fixture<LearnWc>(
+      html`<learn-wc title="attribute title"></learn-wc>`
+    );
 
     expect(el.title).to.equal('attribute title');
   });
